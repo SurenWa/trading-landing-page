@@ -12,7 +12,7 @@ export function Hero() {
           Looking to day trade stocks?
         </p>
         <h1 className="mt-4 text-4xl font-extrabold tracking-tight leading-[1.05] md:text-6xl">
-          Trade Smarter With <Swoosh>Marcelo Estrada</Swoosh>
+          Trade Smarter With <Swoosh>PureFX</Swoosh>
         </h1>
         <p className="mt-6 max-w-md text-base text-muted-foreground md:text-lg">
           We provide more than just stock trading education. We&apos;re a{" "}
@@ -26,10 +26,10 @@ export function Hero() {
 
       <div className="relative mx-auto w-full max-w-md md:max-w-none">
         <Image
-          src="/image1.jpg"
-          alt="Marcelo Estrada"
-          width={1170}
-          height={1560}
+          src="/purefx-image-1.png"
+          alt="PureFX"
+          width={795}
+          height={1172}
           priority
           className="aspect-[4/5] w-full rounded-2xl object-cover"
         />

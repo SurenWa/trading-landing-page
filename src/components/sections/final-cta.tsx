@@ -1,9 +1,9 @@
 import { CtaButton } from "@/components/ui/cta-button";
-import { DISCORD_URL } from "@/lib/config";
+import { STORE_URL } from "@/lib/config";
 
 export function FinalCta() {
   return (
-    <section id="join" className="relative overflow-hidden bg-surface-navy">
+    <section className="relative overflow-hidden bg-surface-navy">
       {/* Soft blue radial glow so the closing band reads as a distinct section (CLAUDE.md §4.11) */}
       <div
         aria-hidden="true"
@@ -17,7 +17,7 @@ export function FinalCta() {
           Join the Cross Trades community today.
         </p>
         <div className="mt-8">
-          <CtaButton href={DISCORD_URL}>Get Started Now</CtaButton>
+          <CtaButton href={STORE_URL}>Get Started Now</CtaButton>
         </div>
       </div>
     </section>

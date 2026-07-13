@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-black/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-8">
         <Link href="#" className="font-heading text-xl font-extrabold tracking-tight">
-          Cross<span className="text-accent-gold">Trades</span>
+          Pure <span className="text-accent-gold">FX</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">

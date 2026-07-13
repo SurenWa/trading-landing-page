@@ -42,9 +42,19 @@ export function WhyJoin() {
                   className={`absolute -top-10 left-2 size-36 rounded-full opacity-20 blur-3xl ${blob}`}
                 />
                 <div className="relative">
-                  <div className="flex size-14 items-center justify-center rounded-2xl border border-border bg-black/40">
-                    <Icon className={`size-7 ${icon}`} aria-hidden="true" />
-                  </div>
+                  {feature.video ? (
+                    <video
+                      src={feature.video}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="w-full rounded-xl border border-border bg-black/40 shadow-2xl shadow-black/60"
+                    />
+                  ) : (
+                    <div className="flex size-14 items-center justify-center rounded-2xl border border-border bg-black/40">
+                      <Icon className={`size-7 ${icon}`} aria-hidden="true" />
+                    </div>
+                  )}
                   <h3 className="mt-6 text-xl font-bold">{feature.title}</h3>
                   <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
                     {feature.description}

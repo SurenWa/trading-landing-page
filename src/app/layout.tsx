@@ -14,11 +14,11 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Cross Trades — Trade Smarter With Marcelo Estrada",
+  title: "Cross Trades — Trade Smarter With PureFX",
   description:
     "More than just stock trading education. Join the Cross Trades private Discord — a true community for day traders and swing traders.",
   openGraph: {
-    title: "Cross Trades — Trade Smarter With Marcelo Estrada",
+    title: "Cross Trades — Trade Smarter With PureFX",
     description:
       "More than just stock trading education. Join the Cross Trades private Discord — a true community for day traders and swing traders.",
     images: [{ url: "/placeholders/og-image.jpg", width: 1200, height: 630 }],

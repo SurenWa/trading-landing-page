@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { CtaButton } from "@/components/ui/cta-button";
 import { DISCORD_URL } from "@/lib/config";
 
@@ -35,12 +33,12 @@ export function WhatToExpect() {
         </div>
       </div>
 
-      <Image
-        src="/image2.jpg"
-        alt="Marcelo Estrada with a community member"
-        width={1170}
-        height={1560}
-        className="mx-auto aspect-[4/5] w-full max-w-md rounded-2xl object-cover md:max-w-none"
+      <video
+        src="/purefx-video-3.mp4"
+        controls
+        playsInline
+        preload="metadata"
+        className="mx-auto w-full max-w-md rounded-2xl shadow-2xl shadow-black/60"
       />
     </section>
   );

@@ -44,7 +44,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="#" className="font-heading text-xl font-extrabold tracking-tight">
-              Cross<span className="text-accent-gold">Trades</span>
+              Pure <span className="text-accent-gold">FX</span>
             </Link>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
               A private Discord community for day traders and swing traders who

@@ -7,7 +7,7 @@ export function AboutCommunity() {
       className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:px-8 md:py-28"
     >
       <video
-        src="/video1.mp4"
+        src="/purefx-video-1.mp4"
         controls
         playsInline
         preload="metadata"
@@ -20,8 +20,8 @@ export function AboutCommunity() {
         </h2>
         <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-muted-foreground md:text-base">
           <p>
-            Marcelo Estrada spent his first two years of trading doing
-            everything wrong — oversized positions, revenge trades, no journal.
+            PureFX spent his first two years of trading doing everything
+            wrong — oversized positions, revenge trades, no journal.
             Cross Trades exists so you can{" "}
             <strong className="font-semibold text-foreground">
               hack the day trading learning curve
