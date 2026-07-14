@@ -40,7 +40,7 @@ export function WhatToExpect() {
         alt="Inside the PureFX trader's academy"
         width={731}
         height={843}
-        className="w-full rounded-2xl shadow-2xl shadow-black/60"
+        className="mx-auto aspect-[4/5] w-full max-w-[220px] rounded-2xl object-cover shadow-2xl shadow-black/60 md:max-w-[280px]"
       />
     </section>
   );

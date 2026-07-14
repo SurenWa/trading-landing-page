@@ -13,7 +13,7 @@ export function AboutCommunity() {
         alt="The PureFX trading community"
         width={735}
         height={889}
-        className="order-last w-full rounded-2xl shadow-2xl shadow-black/60 md:order-first"
+        className="order-last mx-auto aspect-[4/5] w-full max-w-[220px] rounded-2xl object-cover shadow-2xl shadow-black/60 md:order-first md:max-w-[280px]"
       />
 
       <div>

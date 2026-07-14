@@ -24,7 +24,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-[280px] md:max-w-sm">
+      <div className="relative mx-auto w-full max-w-[220px] md:max-w-[280px]">
         <Image
           src="/purefx-image-1.png"
           alt="PureFX"
@@ -33,9 +33,9 @@ export function Hero() {
           priority
           className="aspect-[4/5] w-full rounded-2xl object-cover"
         />
-        <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full border border-border bg-black/80 px-4 py-2 backdrop-blur">
-          <BadgeCheck className="size-4 text-accent-blue" aria-hidden="true" />
-          <span className="text-xs font-semibold">Verified Trader</span>
+        <div className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-full border border-border bg-black/80 px-3 py-1.5 backdrop-blur">
+          <BadgeCheck className="size-3.5 text-accent-blue" aria-hidden="true" />
+          <span className="text-[11px] font-semibold">Verified Trader</span>
         </div>
       </div>
     </section>
