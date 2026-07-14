@@ -114,73 +114,87 @@ export type Testimonial = {
   name: string;
   location: string;
   quote: string;
-  thumb: string;
   avatar: string;
-  duration: string;
-  /** All reviews currently play the same real video per client request. */
-  embedUrl: string;
+  /** Local vertical (9:16) purefx clip in /public — each card gets a unique one. */
+  video: string;
 };
 
+// Every purefx clip not already used by the video grid or why-join cards
+// appears here exactly once.
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Jordan M.",
     location: "Austin, USA",
     quote:
       "The premarket watchlist alone changed how I prepare. I finally have a routine instead of chasing whatever's moving.",
-    thumb: "/placeholders/review-thumb-1.jpg",
     avatar: "/placeholders/avatar-1.jpg",
-    duration: "0:39",
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
+    video: "/purefx215_1744803926_3611999500038922312_561256036.mp4",
   },
   {
     name: "Priya S.",
     location: "Toronto, Canada",
     quote:
       "PureFX explains the why behind every call. After six months here I understand risk management better than after two years on my own.",
-    thumb: "/placeholders/review-thumb-2.jpg",
     avatar: "/placeholders/avatar-2.jpg",
-    duration: "1:12",
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
+    video: "/purefx215_1745233840_3615605877482985839_561256036.mp4",
   },
   {
     name: "Marcus T.",
     location: "London, UK",
     quote:
       "No hype, no lambo talk — just honest breakdowns of what worked and what didn't. That's rarer than it should be.",
-    thumb: "/placeholders/review-thumb-3.jpg",
     avatar: "/placeholders/avatar-3.jpg",
-    duration: "0:54",
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
+    video: "/purefx215_1745326674_3616384645307026758_561256036.mp4",
   },
   {
     name: "Alina K.",
     location: "Berlin, Germany",
     quote:
       "The community reviews my trade journal every month. Having other eyes on my mistakes shortened my learning curve massively.",
-    thumb: "/placeholders/review-thumb-4.jpg",
     avatar: "/placeholders/avatar-4.jpg",
-    duration: "0:47",
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
+    video: "/purefx215_1765443942_3785140471739767340_561256036.mp4",
   },
   {
     name: "Dev R.",
     location: "Mumbai, India",
     quote:
       "I joined for the trade calls and stayed for the people. Someone is always around to sanity-check a setup before I take it.",
-    thumb: "/placeholders/review-thumb-5.jpg",
     avatar: "/placeholders/avatar-5.jpg",
-    duration: "1:03",
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
+    video: "/purefx215_1770690863_3829154804052886445_561256036.mp4",
   },
   {
     name: "Sofia L.",
     location: "Sydney, Australia",
     quote:
       "As a swing trader in a different time zone, the recorded breakdowns are gold. I never feel like I'm missing the session.",
-    thumb: "/placeholders/review-thumb-6.jpg",
     avatar: "/placeholders/avatar-6.jpg",
-    duration: "0:58",
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
+    // purefx215_1781776305 is a byte-identical copy of purefx-video-1.mp4
+    // (grid slot 1), so this card uses a highlight clip instead.
+    video: "/purefx215_1782485012_highlight18085932899310119.mp4",
+  },
+  {
+    name: "Noah B.",
+    location: "Amsterdam, Netherlands",
+    quote:
+      "The monthly accountability check-ins keep me honest. My journal finally shows a process instead of random trades.",
+    avatar: "/placeholders/avatar-1.jpg",
+    video: "/purefx215_1782145836_3925245863369350094_561256036.mp4",
+  },
+  {
+    name: "Camila F.",
+    location: "São Paulo, Brazil",
+    quote:
+      "I stopped overtrading within my first month. Watching the live sessions taught me that sitting on my hands is a position too.",
+    avatar: "/placeholders/avatar-2.jpg",
+    video: "/purefx215_1782483859_3928081362458980196_561256036.mp4",
+  },
+  {
+    name: "Ethan W.",
+    location: "Cape Town, South Africa",
+    quote:
+      "The funded-account guidance was worth it alone. Clear rules, honest feedback, and no promises — just structure.",
+    avatar: "/placeholders/avatar-3.jpg",
+    video: "/purefx215_1781708191_highlight18085932899310119.mp4",
   },
 ];
 
@@ -192,37 +206,30 @@ export const PULL_QUOTE = {
 
 export type Video = {
   title: string;
-  thumb: string;
-  embedUrl: string;
-  watchUrl: string;
+  /** Local vertical (9:16) clip in /public. */
+  src: string;
 };
 
-// All 4 slots currently point at the same real video per client request —
-// swap in unique links/thumbnails per slot when the client sends more.
+// Four of the client's real purefx clips (all 720×1280 vertical).
+// The why-join cards use purefx-video-4/5/6, so the grid takes 1/2/3 + one more.
 export const VIDEOS: Video[] = [
   {
     title: "Live Trading Session: Full Market Open Breakdown",
-    thumb: FEATURED_VIDEO_THUMB,
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
-    watchUrl: FEATURED_VIDEO_URL,
+    src: "/purefx-video-1.mp4",
   },
   {
     title: "How I Build My Premarket Watchlist",
-    thumb: FEATURED_VIDEO_THUMB,
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
-    watchUrl: FEATURED_VIDEO_URL,
+    // purefx-video-2.mp4 is a byte-identical copy of purefx-video-1.mp4,
+    // so this slot uses a highlight clip instead.
+    src: "/purefx215_1781802900_highlight18085932899310119.mp4",
   },
   {
     title: "Risk Management Rules I Never Break",
-    thumb: FEATURED_VIDEO_THUMB,
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
-    watchUrl: FEATURED_VIDEO_URL,
+    src: "/purefx-video-3.mp4",
   },
   {
     title: "Swing Trading a Choppy Market",
-    thumb: FEATURED_VIDEO_THUMB,
-    embedUrl: FEATURED_VIDEO_EMBED_URL,
-    watchUrl: FEATURED_VIDEO_URL,
+    src: "/purefx215_1783098323_3933268855145017011_561256036.mp4",
   },
 ];
 

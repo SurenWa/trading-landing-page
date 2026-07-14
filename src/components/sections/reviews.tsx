@@ -1,12 +1,8 @@
-"use client";
-
-import { useState } from "react";
-import { Play, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { CtaButton } from "@/components/ui/cta-button";
-import { PlaceholderImage } from "@/components/ui/placeholder-image";
 import { TESTIMONIALS } from "@/lib/config";
 
 function Stars() {
@@ -24,8 +20,6 @@ function Stars() {
 }
 
 export function Reviews() {
-  const [playing, setPlaying] = useState<number | null>(null);
-
   return (
     <section id="reviews" className="bg-surface-navy">
       <div className="mx-auto max-w-6xl px-6 py-16 md:px-8 md:py-28">
@@ -42,41 +36,19 @@ export function Reviews() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {TESTIMONIALS.map((t, index) => (
+          {TESTIMONIALS.map((t) => (
             <Card
-              key={t.name}
+              key={t.video}
               className="overflow-hidden rounded-2xl border-border bg-surface p-0"
             >
-              {playing === index ? (
-                <iframe
-                  src={t.embedUrl}
-                  title={`Video testimonial from ${t.name}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="aspect-video w-full border-0"
-                />
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => setPlaying(index)}
-                  aria-label={`Play video testimonial from ${t.name}`}
-                  className="group relative block w-full outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
-                >
-                  <PlaceholderImage
-                    src={t.thumb}
-                    alt={`Video testimonial from ${t.name}`}
-                    className="aspect-video"
-                  />
-                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                    <span className="flex size-14 items-center justify-center rounded-full bg-accent-gold shadow-lg transition-transform group-hover:scale-110">
-                      <Play
-                        className="ml-0.5 size-6 fill-black text-black"
-                        aria-hidden="true"
-                      />
-                    </span>
-                  </span>
-                </button>
-              )}
+              <video
+                src={t.video}
+                controls
+                playsInline
+                preload="metadata"
+                aria-label={`Video testimonial from ${t.name}`}
+                className="aspect-[9/16] w-full bg-black object-cover"
+              />
               <CardContent className="p-6">
                 <Stars />
                 <blockquote className="mt-4 text-[15px] leading-relaxed text-muted-foreground">

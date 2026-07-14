@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Swoosh } from "@/components/ui/swoosh";
 
 export function AboutCommunity() {
@@ -6,12 +8,12 @@ export function AboutCommunity() {
       id="about"
       className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:px-8 md:py-28"
     >
-      <video
-        src="/purefx-video-1.mp4"
-        controls
-        playsInline
-        preload="metadata"
-        className="order-last w-full max-w-md rounded-2xl shadow-2xl shadow-black/60 md:order-first"
+      <Image
+        src="/1.png"
+        alt="The PureFX trading community"
+        width={1536}
+        height={1024}
+        className="order-last w-full rounded-2xl shadow-2xl shadow-black/60 md:order-first"
       />
 
       <div>

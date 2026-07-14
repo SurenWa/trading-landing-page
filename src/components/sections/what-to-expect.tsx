@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { CtaButton } from "@/components/ui/cta-button";
 import { DISCORD_URL } from "@/lib/config";
 
@@ -33,12 +35,12 @@ export function WhatToExpect() {
         </div>
       </div>
 
-      <video
-        src="/purefx-video-3.mp4"
-        controls
-        playsInline
-        preload="metadata"
-        className="mx-auto w-full max-w-md rounded-2xl shadow-2xl shadow-black/60"
+      <Image
+        src="/3.png"
+        alt="Inside the PureFX trader's academy"
+        width={1536}
+        height={1024}
+        className="w-full rounded-2xl shadow-2xl shadow-black/60"
       />
     </section>
   );
