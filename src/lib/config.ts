@@ -90,7 +90,7 @@ export const FEATURES: Feature[] = [
   {
     title: "Learn",
     accent: "gold",
-    video: "/purefx-video-4.mp4",
+    video: "/purefx-video-6.mp4",
     description:
       "Daily premarket watchlists, live trade breakdowns, and a structured video library. Skip years of trial and error by studying real setups as they happen — with the reasoning spelled out.",
   },
@@ -104,7 +104,7 @@ export const FEATURES: Feature[] = [
   {
     title: "Grow",
     accent: "peach",
-    video: "/purefx-video-6.mp4",
+    video: "/purefx215_1782485012_highlight18085932899310119.mp4",
     description:
       "Track your progress with monthly reviews and accountability check-ins. The goal isn't a hot streak — it's building a repeatable process you can trust in any market.",
   },
@@ -119,8 +119,8 @@ export type Testimonial = {
   video: string;
 };
 
-// Every purefx clip not already used by the video grid or why-join cards
-// appears here exactly once.
+// Clip assignments follow client requests — some clips repeat across
+// sections (e.g. the 1782485012 highlight also fills the why-join Grow card).
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Jordan M.",
@@ -160,7 +160,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "I joined for the trade calls and stayed for the people. Someone is always around to sanity-check a setup before I take it.",
     avatar: "/placeholders/avatar-5.jpg",
-    video: "/purefx215_1770690863_3829154804052886445_561256036.mp4",
+    video: "/purefx215_1782485012_highlight18085932899310119.mp4",
   },
   {
     name: "Sofia L.",
@@ -211,7 +211,8 @@ export type Video = {
 };
 
 // Four of the client's real purefx clips (all 720×1280 vertical).
-// The why-join cards use purefx-video-4/5/6, so the grid takes 1/2/3 + one more.
+// Per client request, purefx-video-6 also fills the why-join "Learn" card and
+// grid slot 3, so purefx-video-3/4 are currently unused.
 export const VIDEOS: Video[] = [
   {
     title: "Live Trading Session: Full Market Open Breakdown",
@@ -225,7 +226,7 @@ export const VIDEOS: Video[] = [
   },
   {
     title: "Risk Management Rules I Never Break",
-    src: "/purefx-video-3.mp4",
+    src: "/purefx-video-6.mp4",
   },
   {
     title: "Swing Trading a Choppy Market",

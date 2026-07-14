@@ -38,14 +38,16 @@ export function Reviews() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <Card
-              key={t.video}
+              key={`${t.name}-${t.location}`}
               className="overflow-hidden rounded-2xl border-border bg-surface p-0"
             >
               <video
                 src={t.video}
                 controls
+                autoPlay
+                muted
+                loop
                 playsInline
-                preload="metadata"
                 aria-label={`Video testimonial from ${t.name}`}
                 className="aspect-[9/16] w-full bg-black object-cover"
               />

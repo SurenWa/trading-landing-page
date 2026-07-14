@@ -46,8 +46,10 @@ export function WhyJoin() {
                     <video
                       src={feature.video}
                       controls
+                      autoPlay
+                      muted
+                      loop
                       playsInline
-                      preload="metadata"
                       className="w-full rounded-xl border border-border bg-black/40 shadow-2xl shadow-black/60"
                     />
                   ) : (

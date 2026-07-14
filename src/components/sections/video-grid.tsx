@@ -47,8 +47,9 @@ export function VideoGrid() {
             >
               <video
                 src={video.src}
-                preload="metadata"
+                autoPlay
                 muted
+                loop
                 playsInline
                 tabIndex={-1}
                 aria-hidden="true"
