@@ -36,10 +36,10 @@ export function WhatToExpect() {
       </div>
 
       <Image
-        src="/3.png"
+        src="/screenshot-310.png"
         alt="Inside the PureFX trader's academy"
-        width={1536}
-        height={1024}
+        width={731}
+        height={843}
         className="w-full rounded-2xl shadow-2xl shadow-black/60"
       />
     </section>

@@ -39,10 +39,7 @@ export function Pricing() {
               </span>
             )}
             <CardContent className="flex h-full flex-col p-8">
-              <div className="text-3xl" aria-hidden="true">
-                {tier.emoji}
-              </div>
-              <h3 className="mt-4 text-xl font-bold">{tier.name}</h3>
+              <h3 className="text-xl font-bold">{tier.name}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {tier.tagline}
               </p>

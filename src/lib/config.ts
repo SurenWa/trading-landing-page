@@ -9,15 +9,6 @@ export const DISCORD_URL = "#join";
 // Real Subscord checkout for the private Discord (The Tribe).
 export const STORE_URL = "https://subscord.com/store/1044393249466486874";
 
-export const FEATURED_VIDEO_URL =
-  "https://www.youtube.com/watch?v=3ZZw7OHYqJI&t=3579s";
-
-export const FEATURED_VIDEO_EMBED_URL =
-  "https://www.youtube.com/embed/3ZZw7OHYqJI?start=3579&autoplay=1";
-
-export const FEATURED_VIDEO_THUMB =
-  "https://img.youtube.com/vi/3ZZw7OHYqJI/maxresdefault.jpg";
-
 export type NavLink = {
   label: string;
   href: string;
@@ -37,11 +28,10 @@ export const NAV_LINKS: NavLink[] = [
   },
   {
     label: "Learn",
-    href: "#videos",
+    href: "#expect",
     items: [
       { label: "Blog", href: "#blog" },
       { label: "Tools", href: "#expect" },
-      { label: "Video Lessons", href: "#videos" },
       { label: "FAQ", href: "#contact" },
     ],
   },
@@ -97,7 +87,7 @@ export const FEATURES: Feature[] = [
   {
     title: "Connect",
     accent: "blue",
-    video: "/purefx-video-5.mp4",
+    video: "/purefx215_1782483859_3928081362458980196_561256036.mp4",
     description:
       "Trading alone is the hard way. Ask questions in real time, compare notes with traders at your level, and get honest feedback from people who actually take the same setups.",
   },
@@ -203,36 +193,6 @@ export const PULL_QUOTE = {
     "The market pays you for patience and process, not for predictions.",
   attribution: "PureFX — pinned in #daily-mindset",
 };
-
-export type Video = {
-  title: string;
-  /** Local vertical (9:16) clip in /public. */
-  src: string;
-};
-
-// Four of the client's real purefx clips (all 720×1280 vertical).
-// Per client request, purefx-video-6 also fills the why-join "Learn" card and
-// grid slot 3, so purefx-video-3/4 are currently unused.
-export const VIDEOS: Video[] = [
-  {
-    title: "Live Trading Session: Full Market Open Breakdown",
-    src: "/purefx-video-1.mp4",
-  },
-  {
-    title: "How I Build My Premarket Watchlist",
-    // purefx-video-2.mp4 is a byte-identical copy of purefx-video-1.mp4,
-    // so this slot uses a highlight clip instead.
-    src: "/purefx215_1781802900_highlight18085932899310119.mp4",
-  },
-  {
-    title: "Risk Management Rules I Never Break",
-    src: "/purefx-video-6.mp4",
-  },
-  {
-    title: "Swing Trading a Choppy Market",
-    src: "/purefx215_1783098323_3933268855145017011_561256036.mp4",
-  },
-];
 
 export type PricingTier = {
   name: string;

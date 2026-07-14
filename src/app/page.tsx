@@ -7,7 +7,6 @@ import { WhyJoin } from "@/components/sections/why-join";
 import { Results } from "@/components/sections/results";
 import { Reviews } from "@/components/sections/reviews";
 import { PullQuote } from "@/components/sections/pull-quote";
-import { VideoGrid } from "@/components/sections/video-grid";
 import { Pricing } from "@/components/sections/pricing";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Footer } from "@/components/sections/footer";
@@ -26,7 +25,6 @@ export default function Home() {
         <Pricing />
         <Reviews />
         <PullQuote />
-        <VideoGrid />
         <FinalCta />
       </main>
       <Footer />

@@ -9,10 +9,10 @@ export function AboutCommunity() {
       className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:px-8 md:py-28"
     >
       <Image
-        src="/1.png"
+        src="/screenshot-308.png"
         alt="The PureFX trading community"
-        width={1536}
-        height={1024}
+        width={735}
+        height={889}
         className="order-last w-full rounded-2xl shadow-2xl shadow-black/60 md:order-first"
       />
 

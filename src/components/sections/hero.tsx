@@ -26,10 +26,10 @@ export function Hero() {
 
       <div className="relative mx-auto w-full max-w-md md:max-w-none">
         <Image
-          src="/2.png"
+          src="/purefx-image-1.png"
           alt="PureFX"
-          width={1536}
-          height={1024}
+          width={800}
+          height={1172}
           priority
           className="w-full rounded-2xl object-cover"
         />
